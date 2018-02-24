@@ -32,6 +32,11 @@ ul {
     font-weight: bold;
     color: #000;
     border: 2px solid #ddd;
+    box-shadow: 3px 6px #fff;
+    &:hover {
+        cursor: pointer;
+        background-color: #aaaaff; 
+    }
 }
 
 .btn-delete {
@@ -39,15 +44,23 @@ ul {
     margin-right: 5px;
     border-radius: 50%;
     font-weight: bold;
+        &:hover {
+            cursor: pointer;
+    }
 }
-
 .add-card {
     height: 40px;
     width: 120px;
     border-radius: 20px;
     box-shadow: 3px 2px #afafd8;
     color: #000;
-    background-color: #24ef09
+    background-color: #24ef09;
+    font-weight: bold;
+        &:hover {
+            cursor: pointer;
+            background-color: #179500;
+            color: #fff;
+    }
 }
 
 .board {

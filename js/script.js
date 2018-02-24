@@ -75,7 +75,7 @@ $(function() {
 	   removeCard: function() {
            this.$element.remove();
         }
-    }
+    };
     
     var board = {
         name: 'Kanban Board',
