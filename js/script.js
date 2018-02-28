@@ -28,7 +28,12 @@ $(function() {
             });
 
             $columnAddCard.click(function() {
-                self.addCard(new Card(prompt("Enter the name of the card")));
+                var cardName = prompt("Enter the name of the card");
+                    if(cardName == null) {
+                        alert('Please enter name');
+                    } else {
+                        self.addCard(new Card(cardName));
+                    }
             });
         
             $column.append($columnTitle)
@@ -95,10 +100,28 @@ $(function() {
 
     $('.create-column').click(function(){
 	   var name = prompt('Enter a column name');
-	   var column = new Column(name); 
+	   var column = new Column(name);
+          if (name == null) {
+              alert('Please enter name')
+          } else {
             board.addColumn(column);
+          }
     });
+    
+    var todoColumn = new Column('To do');
+    var doingColumn = new Column('Doing');
+    var doneColumn = new Column('Done');
 
-});
+    board.addColumn(todoColumn);
+    board.addColumn(doingColumn);
+    board.addColumn(doneColumn);
+
+    var card1 = new Card('New task');
+    var card2 = new Card('Create kanban boards');
+
+    todoColumn.addCard(card1);
+    doingColumn.addCard(card2);
+
+    });
             
      
