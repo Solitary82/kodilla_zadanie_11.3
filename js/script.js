@@ -29,7 +29,7 @@ $(function() {
 
             $columnAddCard.click(function() {
                 var cardName = prompt("Enter the name of the card");
-                    if(cardName == null) {
+                    if(cardName === null) {
                         alert('Please enter name');
                     } else {
                         self.addCard(new Card(cardName));
@@ -101,8 +101,8 @@ $(function() {
     $('.create-column').click(function(){
 	   var name = prompt('Enter a column name');
 	   var column = new Column(name);
-          if (name == null) {
-              alert('Please enter name')
+          if (name === null) {
+              alert('Please enter name');
           } else {
             board.addColumn(column);
           }
