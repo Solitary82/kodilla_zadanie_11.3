@@ -9,13 +9,14 @@ body {
     background-color: #ffffdd; 
 }
 
+
 .column-container { 
     width: 100%; 
     margin: auto; 
 }
 
 h1 { 
-    font-size: 30px;
+    font-size: 30px; 
     text-transform: uppercase; 
 }
 
@@ -41,7 +42,7 @@ ul {
 }
 
 .btn-delete { 
-    background-color: #ff0000;
+    background-color: #ff0000; 
     margin-right: 5px; 
     border-radius: 50%; 
     font-weight: bold; 
@@ -74,7 +75,7 @@ ul {
 .column { 
     border: 2px solid #fff; 
     width: 300px; 
-    height: auto; 
+    min-height: 500px; 
     float: left; 
     background: #bbffff; 
     border-radius: 10px; 
@@ -82,17 +83,22 @@ ul {
     margin-top: 20px; 
 }
 
+.column-card-list { 
+    min-height: 50px;
+    width: 90%; 
+}
+
 .column-title { 
-    word-wrap: normal; 
-    background-color: #fff; 
-    border: 1px solid #bbbfff; 
-    border-radius: 5px; 
+    word-wrap: normal;
+    background-color: #fff;
+    border: 1px solid #bbbfff;
+    border-radius: 5px;
 }
 
 .column::before, 
 .column::after { 
-    content: ""; 
-    display: table; 
+    content: "";
+    display: table;
     clear: both; 
 }
 
@@ -101,7 +107,7 @@ ul {
     background-color: #fff000; 
     box-shadow: 2px 2px #ffffdd; 
     width: 90%; 
-    height: auto; 
+    min-height: 50px; 
     margin-right: 60px; 
     margin-top: 10px; 
     border-radius: 5px; 

@@ -70,12 +70,17 @@ ul {
 .column {
     border: 2px solid #fff;
     width: 300px;
-    height: auto;
+    min-height: 500px;
     float: left;
     background: #bbffff;
     border-radius: 10px;
     margin-right: 10px;
     margin-top: 20px;
+}
+
+.column-card-list {
+	min-height: 50px;;
+	width: 90%;
 }
 
 .column-title {
@@ -97,7 +102,7 @@ ul {
     background-color: #fff000;
     box-shadow: 2px 2px #ffffdd;
     width: 90%;
-    height: auto;
+    min-height: 50px;
     margin-right: 60px;
     margin-top: 10px;
     border-radius: 5px;
